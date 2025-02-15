@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Tutorial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .topnav {
+      background-color: #333; 
+      overflow: hidden; 
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      z-index: 1000; 
+      display: flex; 
+      justify-content: center; 
+      padding: 10px 0; 
+      font-family: 'Lato', sans-serif;
+    }
+
+    .topnav a {
+      float: left; 
+      display: block;
+      color: white; 
+      text-align: center; 
+      padding: 14px 20px; 
+      text-decoration: none; 
+      font-size: 17px; 
+      font-family: 'Lato', sans-serif;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd; 
+      color: black; 
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50; 
+      color: white; 
+    }
+
+    body {
+      margin: 0; 
+      padding-top: 75px;
+      cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Chess_Cursor.png'), default;
+      font-family: 'Lato', sans-serif;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      vertical-align: top; 
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="learn.html">Learn</a>
+    <a href="#contact">Openings</a>
+    <a href="#about">Others</a>
+  </div>
+
+<table border="0" width="100%">
+<tr>
+  <td width="80%"><font size="5"><b>Placement</b></font><br>
+<font size="5">The White Knights start on b1 and g1 <br>
+The Black Bishops start on b8 and g8</font>
+</td>
+  <td width="20%"><img src="knight-pos.PNG" width="100%"><br><center>Knight's placement</center></td>
+</tr>
+<tr>
+  <td width="80%"><font size="5"><font size="5"><b>Movement</b></font><br>
+<font size="5">The knight's movement is very unique, it moves two squares vertically and one square horizontally, or two squares horizontally and one square vertically (in "L" shapes). Due to this movement, the Knight will always alternate between a light and dark square on each move. The knight is also the only piece that is able to jump over pieces, making the <a href="pawn.html">pawn </a> and the knight the only two pieces that can move at the very start of the game. <br></font>
+</td>
+  <td width="20%"><img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/pdrpnht/phpVuLl4W.png" width="100%"><br><center>Knight's movement</center></td>
+  
+</tr>
+
+<tr>
+  <td width="80%"><font size="5"><b>Comparison vs Bishop</b></font><br>
+<font size="5">Knight is often not as good in an endgame as a Bishop. A Knight is only able to control one part of the board at a time which makes it a hard piece to use when there are Pawns on both sides of the board though this also applies vice-versa: a Knight is stronger in an endgame with Pawns on only one side of the board.
+
+<br>Knights have the advantage of being able to control squares of either color though even this can come as a disadvantage in a rare situation such as a zugzwang. In the diagram on the right you will see a position where if it was White's turn to move, White cannot win. Though it were Black's turn to move, White could win. This tricky position is based on the fact that players are forced to move when it is their turn and that alternation between squares causes a cycle that decides the fate of the game.</font>
+
+</td>
+  <td width="20%"></td>
+</tr>
+
+  <td width="80%"><font size="5"><b>Knight Positioning</b></font><br>
+<font size="5">The amount of moves that a Knight is able to make is based on it's position on the board. It is able to have a maximum of 8 moves (also called an octopus knight) if it is located in the 16 center pieces of the board and a minimum of 2 moves if it is located in the corner. This is why it is better to develop Knight's to the center of the board to ensure it has optimal positioning.
+
+<br>This concept follows a famous quote by German chess player Siegbert Tarrasch: "A knight on the rim is dim."</font>
+
+</td>
+  <td width="20%"><img src="knight-position.png" width="100%"><br><center>Control the center to threat the knight on f6</center></td>
+</tr>
+
+<tr>
+  <td width="80%"><font size="5"><b>Fork</b></font><br>
+<font size="5">A fork is a powerful move that threatens multiple pieces. The attacking piece (often a knight, sometimes a bishop) moves into a position where it can capture multiple pieces of the opposing color. If one of those pieces is a king, it is a "royal fork" and gives check. The opposing player is forced to respond by protecting one of the pieces, leaving the other open for capture on the next move.
+
+It is sometimes referred to as a "split move."
+<br>When you are subject to a fork, do not despair! Not all forks are good forks, in fact, some can be easily sidestepped. Search for ways your forked pieces can counterattack:<br>
+
+- First, examine the board and see if one of your forked pieces can check. Make sure, while checking, the piece will not be put under pressure yet again! This would merely result in another fork, but this time from two different pieces. Once you check their king, move your other piece to a good location. It is worth noting this refutation is most common in Endgames.
+<br>- If that doesn't work, look for threats you can put on another piece by one of your forked pieces. Your opponent can exchange pieces, or move their threatened piece.
+<br>- If you have no luck finding counterattacks, you can restrategize and focus on defense. You can protect your pieces if the forking piece is more valuable than the forked pieces. In most defensive cases, you can move one of your forked pieces to protect the other.
+<br>- Lastly, try to capture your opponent's pieces (defended or not) with your forked pieces. If you're going to get forked, you should at least take some compensation!</font>
+
+</td>
+  <td width="20%"><img src="https://i.redd.it/aymzmuidt14b1.jpg" width="100%"><br><center>Fork to capture the Queen</center></td>
+</tr>
+
+
+
+</body>
+</html>
