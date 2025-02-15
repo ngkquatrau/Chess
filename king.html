@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Tutorial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .topnav {
+      background-color: #333; 
+      overflow: hidden; 
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      z-index: 1000; 
+      display: flex; 
+      justify-content: center; 
+      padding: 10px 0; 
+      font-family: 'Lato', sans-serif;
+    }
+
+    .topnav a {
+      float: left; 
+      display: block;
+      color: white; 
+      text-align: center; 
+      padding: 14px 20px; 
+      text-decoration: none; 
+      font-size: 17px; 
+      font-family: 'Lato', sans-serif;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd; 
+      color: black; 
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50; 
+      color: white; 
+    }
+
+    body {
+      margin: 0; 
+      padding-top: 75px;
+      cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Chess_Cursor.png'), default;
+      font-family: 'Lato', sans-serif;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      vertical-align: top; 
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="learn.html">Learn</a>
+    <a href="#contact">Openings</a>
+    <a href="#about">Others</a>
+  </div>
+
+<table border="0" width="100%">
+<tr>
+  <td width="80%"><font size="5"><b>Placement</b></font><br>
+<font size="5">Both players start with one King each, located in the center of the board next to the <a href="queen.html">Queen</a>. 
+
+White's King starts on e1 while Black's King starts on e8, directly across from each other. <br>
+
+The mnemonic used for the placement of the Queen can also be used for the King but it is reversed. "The King starts on the opposite color of it's own." This means that a White King starts on a black square and vice versa. It is important to note that this only works if the chessboard is oriented correctly. <br></font>
+</td>
+  <td width="20%"><img src="king-pos.png" width="100%"><br><center>King's placement</center></td>
+</tr>
+<tr>
+  <td width="80%"><font size="5"><font size="5"><b>Movement</b></font><br>
+<font size="5">The King can move one square horizontally, vertically or diagonally unless the square is already occupied by a friendly piece or if that square would place the King in <a href="#check">check</a>. If the square is occupied by an undefended enemy piece then the King may capture it. Opposing Kings can never be adjacent or diagonal to eachother as it would place them both in check. <br></font>
+</td>
+  <td width="20%"><img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/pdrpnht/phpmVRKYr.png" width="100%"><br><center>King's movement</center></td>
+  
+</tr>
+
+<tr>
+  <td width="80%"><font size="5"><b>Castling</b></font><br>
+<font size="5">Castling is a chess term used to describe a move done by the king and the <a href="rook.html">rook</a>.<br>
+
+To castle, the king is moved two spaces towards a rook. The rook is then placed on the space next to the king, on the opposite side, as if jumping over the king.<br>
+
+Castling can only occur when the following conditions are met:<br><ul><li>There must not be any pieces between the king and the rook.</li>
+<li>The king and the rook must not have moved earlier in the game (even if they return to their original squares).</li>
+<li>The king must not be in check.</li>
+<li>The move must not put the king in check.</li>
+<li>All of the squares the king passes through must not be under attack</li>
+<li>The king and rook must be in the same team</li>
+<li>Both must be on the first rank (this is to prevent a king castling across the board with a pawn that promoted into a rook that hasn't moved yet)</li></ul>
+Note that the rook can castle while under attack.<br>
+
+Castling with the rook closer to the king is called kingside castling/short castling, while castling with the rook closer to the queen is called queenside castling/long castling.<br>
+
+Hand castling is the act of manually moving the king and rook into the castle position. Typically, a player would hand castle when they have already moved their king or rook and are unable to castle.</font>
+
+</td>
+  <td width="20%"><img src="short-castling.gif" width="100%"><br><center>Short Castling</center><br><img src="long-castling.gif" width="100%"><br><center>Long Castling</center></td>
+</tr>
+
+<tr id="check">
+  <td width="80%"><font size="5"><b>Check and Checkmate</b></font><br>
+<font size="5">Check is a situation in chess and other chess-like games that describes a king that is threatened by another piece. It is illegal for a king to move into check in the official international rule, which is why the game ends in a draw if there are only two kings, since they can't check each other. It is also illegal for a king to castle to escape check, end up in check, or encounter check while castling.<br>
+Checkmate is any position in chess and other similar games, in which a king that is in check cannot move out of check, block the check with other pieces, or capture the checking piece. It signifies the end of the game. The checkmate is the primary and the only aim in a chess game. However, in games with grandmasters, checkmate rarely occurs, because in most games, a player resigns before that happens, or a draw is agreed. <br>Checkmate is different from stalemate, where the king is NOT in check but cannot legally move either his King or any of his other pieces.</font>
+
+</td>
+  <td width="20%"><img src="checkmate.png" width="100%"><br><center>Checkmate (Edward Lasker vs Sir George Thomas 29 Oct 1912)</center></td>
+</tr>
+
+<tr>
+  <td width="80%"><font size="5"><b>Stalemate</b></font><br>
+<font size="5">A stalemate occurs when a player, on their turn has no legal moves and their King is not in check. If this happens, the King is said to be stalemated and the game ends in a draw. A player who has little to no chance of winning will often, in order to avoid a loss, attempt to lure the opponent to a stalemating position.</font>
+
+</td>
+  <td width="20%"><img src="stalemate.png" width="100%"><br><center>Fastest stalemate (Johan Upmark vs Robin Johansson 1995)</center></td>
+</tr>
+
+
+
+</body>
+</html>
