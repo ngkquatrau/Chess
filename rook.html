@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Tutorial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .topnav {
+      background-color: #333; 
+      overflow: hidden; 
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      z-index: 1000; 
+      display: flex; 
+      justify-content: center; 
+      padding: 10px 0; 
+      font-family: 'Lato', sans-serif;
+    }
+
+    .topnav a {
+      float: left; 
+      display: block;
+      color: white; 
+      text-align: center; 
+      padding: 14px 20px; 
+      text-decoration: none; 
+      font-size: 17px; 
+      font-family: 'Lato', sans-serif;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd; 
+      color: black; 
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50; 
+      color: white; 
+    }
+
+    body {
+      margin: 0; 
+      padding-top: 75px;
+      cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Chess_Cursor.png'), default;
+      font-family: 'Lato', sans-serif;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      vertical-align: top; 
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="learn.html">Learn</a>
+    <a href="#contact">Openings</a>
+    <a href="#about">Others</a>
+  </div>
+
+<table border="0" width="100%">
+<tr>
+  <td width="80%"><font size="5"><b>Placement</b></font><br>
+<font size="5">Each player starts with two Rooks in the corners of their own side of the board.<br>
+
+White's Rooks start on a1 and h1. <br>
+Black's Rooks start on a8 and h8. <br></font>
+</td>
+  <td width="20%"><img src="rook-pos.PNG" width="100%"><br><center>Rook's placement</center></td>
+</tr>
+<tr>
+  <td width="80%"><font size="5"><font size="5"><b>Movement</b></font><br>
+<font size="5">The Rook moves along the ranks and files of the board, able to move any amount of squares vertically or horizontally.<br></font>
+</td>
+  <td width="20%"><img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/pdrpnht/phpCQgsYR.png" width="100%"><br><center>Rook's movement</center></td>
+  
+</tr>
+
+<tr>
+  <td width="80%"><font size="5"><b>Rook Development</b></font><br>
+<font size="5">In the beginning, the Rooks are blocked in by other pieces and cannot immediately participate in the game. An important strategy that most openings should contain is to connect the Rooks by clearing other pieces and executing the aforementioned castling. From this position, it is recommended to stack the Rooks on a single file, also known as "doubling the rooks", so it can enter enemy territory while being protected by the other Rook.</font>
+
+</td>
+  <td width="20%"><img src="rook-development.png" width="100%"><br><center>In this position, white queen can't escape and will be captured on the next move by developing too early.</center></td>
+</tr>
+
+  <td width="80%"><font size="5"><b>Rook endgame</b></font><br>
+<font size="5">In an endgame position, Rooks are one of the best pieces for delivering checkmates. A popular technique is called a ladder mate. In this checkmate pattern the player keeps checking the King while moving the Rooks one file at a time, "climbing a ladder", until the King is on the edge of board and has no available spaces to move to.</font>
+
+</td>
+  <td width="20%"><img src="rook-endgame.gif" width="100%"><br><center>White exchanges the queens to prevent Black from castled</center></td>
+</tr>
+
+</body>
+</html>
